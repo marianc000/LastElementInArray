@@ -13,3 +13,10 @@ console.log(new Date(start), new Date(stop));
 stop = events.at(-1);
 
 console.log(new Date(start), new Date(stop));
+//
+
+function getPostId(url){
+    return url.split("-").at(-1);
+}
+
+console.log(getPostId("https://marian-caikovski.medium.com/a-modern-way-to-access-the-last-element-of-an-array-3667e6615bc3"));
